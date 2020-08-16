@@ -1,12 +1,15 @@
 import React from "react";
 
 export default function Saludar(props) {
-  console.log(props);
+  console.log(props.userInfo.nombre);
+  console.log(props.userInfo.edad);
+  console.log(props.userInfo.color);
   return (
     <div>
-      <h2>
-        Hola {props.name} tengo {props.edad} de edad{" "}
-      </h2>
+      <p>
+        Hola {props.userInfo.nombre}, tiene {props.userInfo.edad}, color
+        favorito {props.userInfo.color}
+      </p>
     </div>
   );
 }
