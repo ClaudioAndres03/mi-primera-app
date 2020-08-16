@@ -10,7 +10,7 @@ function App() {
 
   // objecto
   const usuario = {
-    nombre: "Elena",
+    // nombre: "Elena",
     edad: "15",
     color: "Azul",
   };

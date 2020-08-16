@@ -7,7 +7,7 @@ export default function Saludar(props) {
 
   //   asignacion por destructing
   const { userInfo, saludarfn } = props;
-  const { nombre } = userInfo;
+  const { nombre = "Anonimo" } = userInfo;
 
   console.log(props);
   console.log(userInfo);
