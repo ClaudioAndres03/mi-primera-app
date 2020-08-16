@@ -15,8 +15,11 @@ function App() {
     color: "Azul",
   };
 
-  const saludarfn = (nombre) => {
-    console.log("Hola " + nombre);
+  const saludarfn = (nombre, edad) => {
+    console.log("Hola " + nombre + ", tiene " + edad + " años ");
+
+    //template string
+    console.log(`Hola ${nombre}, tiene ${edad} años`);
   };
 
   return (
