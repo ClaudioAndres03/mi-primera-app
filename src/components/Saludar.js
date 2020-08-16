@@ -5,12 +5,15 @@ export default function Saludar(props) {
   //     console.log("Hola Claudio");
   //   };
 
+  //   asignacion por destructing
+  const { userInfo, saludarfn } = props;
+  const { nombre } = userInfo;
+
   console.log(props);
+  console.log(userInfo);
   return (
     <div>
-      <button onClick={() => props.saludarfn(props.userInfo.nombre)}>
-        saludar
-      </button>
+      <button onClick={() => saludarfn(nombre)}>saludar</button>
     </div>
   );
 }
